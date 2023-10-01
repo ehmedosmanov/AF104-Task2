@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,600;0,700;1,100&family=Inter:wght@100;400;600;700&display=swap');
+
+/* --RESET CSS-- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* --HELPER CLASSES CSS-- */
+.section {
+    padding: 70px 0;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 18px 36px;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all .2s ease-out;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.btn-outline:hover {
+    background-color: #10C98F;
+    border: 2px solid #10C98F;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --HEADER START-- */
+#header {
+    background-image: url(../images/h1_hero1.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* --OVERLAY-- */
+.overlay {
+    position: absolute;
+    background-color: rgba(16, 201, 143, 0.4);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.header-container {
+    position: relative;
+    z-index: 2;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* --NAVBAR-- */
+.navbar .logo {
+    float: left;
+    padding: 16px 0;
+}
+
+.navbar .nav-items {
+    float: right;
+}
+
+.navbar .nav-items .nav-item {
+    display: inline-block;
+    padding: 28px 16px;
+    cursor: pointer;
+}
+
+.navbar .nav-items .nav-link {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.navbar .nav-item .nav-button {
+    padding: 16px 25px;
+    background-color: #10C98F;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.navbar .nav-items .nav-item:nth-child(4) {
+    position: relative;
+}
+
+.navbar .nav-items .nav-item:nth-child(4):hover .submenu {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* --DROPDOWN-- */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 68px;
+    padding: 16px 15px 16px 10px;
+    width: 151px;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+.submenu li a {
+    display: inline-block;
+    padding: 5px 5px;
+    color: #234821;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all .4s ease-out;
+
+}
+
+.submenu li a:hover {
+    color: #10C98F;
+    padding-left: 10px;
+}
+
+/* --LEFT SIDE HEADER-- */
+.header-content .header-content__left {
+    color: #fff;
+    width: 40%;
+    text-align: left;
+    float: left;
+    padding-top: 100px;
+}
+
+.header-content .header-content__left h1 {
+    color: #fff;
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+
+.header-content .header-content__left .divider {
+    height: 3px;
+    width: 30%;
+    margin: 25px 0;
+    color: #fff;
+    background-color: #fff;
+}
+
+.header-content .header-content__left p {
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+/* --RIGHT SIDE HEADER-- */
+
+.header-content .header-content__right {
+    width: 34%;
+    padding-top: 100px;
+    float: right;
+}
+
+.header-content .header-content__right .form-container {
+    padding: 40px 30px;
+    background-color: #fff;
+}
+
+
+.header-content .header-content__right h2 {
+    color: #234821;
+    font-size: 30px;
+}
+
+.header-content .header-content__right p {
+    padding: 15px 0;
+    color: #3F4854;
+    font-size: 0.9rem;
+}
+
+.header-content .header-content__right .form-divider {
+    width: 28%;
+    height: 4px;
+    background-color: #10C98F;
+    color: #10C98F;
+    margin: 0 auto;
+}
+
+/* --FORM SIDE-- */
+.form-contact label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #4C5753;
+    padding: 15px 0px;
+}
+
+.form-contact select {
+    width: 100%;
+    padding: 15px 25px;
+    text-align: left;
+}
+
+
+.form-contact select option {
+    background-color: #10C98F;
+    color: #000;
+    font-size: 15px;
+    margin-right: 5px;
+    display: block;
+    padding: 25px;
+}
+
+.pay span {
+    color: #10C98F;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+
+.submit button {
+    background-color: #10C98F;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 15px 0;
+    width: 100%;
+}
+
+/* --HEADER END-- */
